@@ -271,8 +271,8 @@ nav {
 
 /* page 2 bottom animation */
 #page2 .bottom-round {
-    height: 30vw;
-    width: 30vw;
+    height: 32vw;
+    width: 32vw;
     background: linear-gradient(to top right,#FE330A, #ff8d30);
     border-radius: 50%;
     position: absolute;
@@ -297,9 +297,40 @@ nav {
     }
 }
 
-
 #page3 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: rgb(239, 234, 227);
-};
+    padding: 4vw 0;
+}
+
+.project-bar {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.project-bar h2 {
+    font-size: 3vw;
+    z-index: inherit;
+    z-index: 9;
+}
+
+.project-bar .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #FF9832;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+.project-bar:hover .overlay {
+    top: 0;
+}
