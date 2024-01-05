@@ -304,6 +304,20 @@ nav {
     padding: 4vw 0;
 }
 
+/* .project-bar-heading {
+    display: flex;
+    align-items: center;
+} */
+
+/* .project-bar-heading h {
+    font-family: newlight;
+} */
+
+/* .edit-round-shape {
+    height: 1vh;
+    width: 1vh;
+} */
+
 .project-bar {
     height: 150px;
     width: 100%;
@@ -333,4 +347,22 @@ nav {
 
 .project-bar:hover .overlay {
     top: 0;
+}
+
+.project-bar-container {
+    /* background-color: aqua; */
+}
+
+#bottom-img {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: yellow; */
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
