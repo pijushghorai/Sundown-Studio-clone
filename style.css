@@ -8,16 +8,23 @@
     src: url(./assets/NeueHaasDisplayRoman.ttf);
 }
 
+@font-face {
+    font-family: newthin;
+    font-weight: 100;
+    src: url(./assets/NeueHaasDisplayThin.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Neue Haas Grotesk Display Pro';
+    
 }
 
 html, body {
     height: 100%;
     width: 100%;
+    font-family: 'Neue Haas Grotesk Display Pro';
 }
 
 #page1 {
@@ -304,19 +311,28 @@ nav {
     padding: 4vw 0;
 }
 
-/* .project-bar-heading {
+.project-bar-heading{
     display: flex;
     align-items: center;
-} */
+    height: 150px;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw;
+}
 
-/* .project-bar-heading h {
-    font-family: newlight;
-} */
+.red-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #FE330A;
+    border-radius: 50%;
+}
 
-/* .edit-round-shape {
-    height: 1vh;
-    width: 1vh;
-} */
+.project-bar-heading h4 {
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #000000bd;
+    font-family: newthin;
+}
 
 .project-bar {
     height: 150px;
@@ -324,6 +340,7 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.404);
     padding: 0 2vw;
     overflow: hidden;
@@ -333,6 +350,22 @@ nav {
     font-size: 3vw;
     z-index: inherit;
     z-index: 9;
+}
+
+.project-bar .right-bar-info{
+    text-align: right;
+    text-transform: uppercase;
+    /* font-size: 1vw; */
+    color: #00000085;
+    line-height: 1vw;
+    z-index: inherit;
+    z-index: 9;
+}
+
+.right-bar-info .subtext {
+    font-family: newthin;
+    font-weight: 100;
+    text-transform: capitalize;
 }
 
 .project-bar .overlay {
