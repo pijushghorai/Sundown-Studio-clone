@@ -32,3 +32,20 @@ function SwiperAnimation() {
 
 PageAnimation()
 SwiperAnimation()
+
+let menu = document.querySelector("nav h3")
+let full = document.querySelector(".full-scr")
+let navImg = document.querySelector("nav img")
+let flag = 0
+menu.addEventListener("click", ()=>{
+    if (flag == 0) {
+        full.style.top = 0
+        navImg.style.opacity = 0
+        flag = 1
+    }
+    else{
+        full.style.top = "-100%"
+        navImg.style.opacity = 1
+        flag = 0
+    }
+}) 
